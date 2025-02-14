@@ -1,5 +1,6 @@
 import os
 import sexpdata
+from pathlib import Path
 
 
 def reorder_args(expr):
@@ -23,8 +24,8 @@ def process_file(filepath):
         data = sexpdata.loads(f.read())
 
     modified_data = [reorder_args(expr) for expr in data]
-
-    with open(filepath, "w") as f:
+    newpath = f"out/{Path(filepath).name}"
+    with open(newpath, "w") as f:
         f.write(sexpdata.dumps(modified_data))
 
 
