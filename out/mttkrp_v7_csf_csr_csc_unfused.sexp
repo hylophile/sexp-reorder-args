@@ -11,10 +11,9 @@
                     (lambda $var_11
                       (lambda $var_12
                         (sum
-                         $var_14
-                         (sum $var_14
-                              (var $var_01)
+                         (sum (var $var_01)
                               $var_13
+                              $var_14
                               (let $var_15 (get
                                             [var $var_02]
                                             [var $var_13])
@@ -25,9 +24,9 @@
                                                1])
                                   (sing
                                    (unique (var $var_14))
-                                   (sum $var_18
-                                        (subarray (var $var_03) (var $var_15) (- (var $var_16) 1))
+                                   (sum (subarray (var $var_03) (var $var_15) (- (var $var_16) 1))
                                         $var_17
+                                        $var_18
                                         (let $var_19 (get
                                                       [var $var_04]
                                                       [var $var_17])
@@ -37,63 +36,64 @@
                                                          (var $var_17)
                                                          1])
                                             (sing (unique (var $var_18))
-                                                  (sum $var_22
-                                                       (subarray (var $var_05)
+                                                  (sum (subarray (var $var_05)
                                                                  (var $var_19)
                                                                  (- (var $var_20) 1))
                                                        $var_21
+                                                       $var_22
                                                        (let $var_23 (get
                                                                      [var $var_06]
                                                                      [var $var_21])
                                                          (sing (unique (var $var_22))
                                                                (var $var_23))))))))))))
                          $var_13
+                         $var_14
                          (sing
                           (var $var_13)
                           (sum
-                           $var_16
                            (var $var_14)
                            $var_15
-                           (sum $var_18
-                                (get (sum $var_18
-                                          (var $var_07)
+                           $var_16
+                           (sum (get (sum (var $var_07)
                                           $var_17
+                                          $var_18
                                           (let $var_19 (get
                                                         [var $var_07]
                                                         [+
                                                          (var $var_17)
                                                          1])
                                             (sing (var $var_17)
-                                                  (sum $var_21
-                                                       (subarray (var $var_08)
+                                                  (sum (subarray (var $var_08)
                                                                  (var $var_18)
                                                                  (- (var $var_19) 1))
                                                        $var_20
+                                                       $var_21
                                                        (sing (unique (var $var_21))
                                                              (get (var $var_09) (var $var_20)))))))
                                      (var $var_15))
                                 $var_17
+                                $var_18
                                 (sing
                                  (var $var_17)
                                  (* (var $var_18)
-                                    (sum $var_20
-                                         (var $var_16)
+                                    (sum (var $var_16)
                                          $var_19
+                                         $var_20
                                          (* (var $var_20)
-                                            (get (get (sum $var_22
-                                                           (var $var_10)
+                                            (get (get (sum (var $var_10)
                                                            $var_21
+                                                           $var_22
                                                            (let $var_23 (get
                                                                          [var $var_10]
                                                                          [+
                                                                           (var $var_21)
                                                                           1])
                                                              (sing (var $var_21)
-                                                                   (sum $var_25
-                                                                        (subarray (var $var_11)
+                                                                   (sum (subarray (var $var_11)
                                                                                   (var $var_22)
                                                                                   (- (var $var_23) 1))
                                                                         $var_24
+                                                                        $var_25
                                                                         (sing (unique (var $var_25))
                                                                               (get (var $var_12)
                                                                                    (var $var_24)))))))

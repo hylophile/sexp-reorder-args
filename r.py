@@ -29,7 +29,7 @@ def process_file(filepath):
         f.write(sexpdata.dumps(modified_data))
 
 
-for root, _, files in os.walk("."):
+for root, _, files in os.walk("./in"):
     for file in files:
         if file.endswith(".sexp"):
             # print(file)

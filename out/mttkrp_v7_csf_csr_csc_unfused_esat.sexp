@@ -10,21 +10,21 @@
                   (lambda $var_10
                     (lambda $var_11
                       (lambda $var_12
-                        (sum $var_14
-                             (var $var_01)
+                        (sum (var $var_01)
                              $var_13
+                             $var_14
                              (sing
                               (var $var_14)
-                              (sum $var_16
-                                   (subarray (var $var_03)
+                              (sum (subarray (var $var_03)
                                              (get (var $var_02) (var $var_13))
                                              (- (get (var $var_02) (+ (var $var_13) 1)) 1))
                                    $var_15
-                                   (sum $var_18
-                                        (subarray (var $var_08)
+                                   $var_16
+                                   (sum (subarray (var $var_08)
                                                   (get (var $var_07) (var $var_16))
                                                   (- (get (var $var_07) (+ (var $var_16) 1)) 1))
                                         $var_17
+                                        $var_18
                                         (sing
                                          (var $var_18)
                                          (* (get (var $var_09) (var $var_17))

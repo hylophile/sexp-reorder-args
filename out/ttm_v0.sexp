@@ -1,17 +1,17 @@
 (lambda $A
   (lambda $B
-    (sum $_i_Bi_val
-         (var $B)
+    (sum (var $B)
          $_i_Bi_key
-         (sum $_j_Bij_val
-              (var $_i_Bi_val)
+         $_i_Bi_val
+         (sum (var $_i_Bi_val)
               $_j_Bij_key
-              (sum $_k_Ck_val
-                   (var $A)
+              $_j_Bij_val
+              (sum (var $A)
                    $_k_Ck_key
-                   (sum $_l_B_v_val
-                        (var $_j_Bij_val)
+                   $_k_Ck_val
+                   (sum (var $_j_Bij_val)
                         $_l_B_v_key
+                        $_l_B_v_val
                         (sing (var $_i_Bi_key)
                               (sing (var $_j_Bij_key)
                                     (sing (var $_k_Ck_key)
